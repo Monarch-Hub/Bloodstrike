@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home || Bloodstrike</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/img/netease_logo.jpeg" alt="Netease logo">
+        </div>
+        
+        <div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="banner">
+        <div>
+        <h1>1000 Worth of Gold </h1>
+        <h2>For all Master and Legend Tiers</h2>
+        <a href="form.html">Claim now</a>
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="head">
+            <h1>Summary</h1>
+        </div>
+        <p>Due to the new <strong>Death games </strong> event. You've been lucky for a chance to get 1000 worth of gold and Ultra Ethan cyberhunter free giveaway.</p>
+        <p>This is a token to thank you for your playtime in the game and your cooperation in making the game better.</p>
+        <p>Claim your own now.</p> <a href="form.html">Claim now</a>
+    </div>
+    
+    <div class="countdown">
+        
+        <div class="head">
+            <h1>Deal Expires...</h1>
+        </div>
+        
+       <div class="launch-time">
+           <div>
+               <p id="days">00</p>
+               <span>Days</span>
+           </div>
+           
+           <div>
+               <p id="hours">00</p>
+               <span>Hours</span>
+           </div>
+           
+           <div>
+               <p id="min">00</p>
+               <span>Minutes</span>
+           </div>
+           
+           <div>
+               <p id="sec">00</p>
+               <span>Seconds</span>
+           </div>
+       </div>
+    </div>
+    
+    <script>
+        var countdownDate = new Date("Jan 15, 2025 00:00:00").getTime();
+
+var x = setInterval(function () {
+    var now = new Date().getTime()
+    
+    var distance = countdownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("min").innerHTML = minutes;
+document.getElementById("sec").innerHTML = seconds;
+}, 1000);
+    </script>
+</body>
+</html>
