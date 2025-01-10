@@ -36,7 +36,7 @@ header .nav a {
     position: relative;
     height: 550px;
     width: 100%;
-    background: url('../img/banner_img.jpeg');
+    background: url('banner_img.jpeg');
     background-repeat: no-repeat;
     background-position: center;
 }
